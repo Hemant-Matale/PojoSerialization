@@ -13,10 +13,10 @@ public static void main(String[] args) {
 	Response response = given()
 			.header("Content-Type","application/json")
 			.body ("{\r\n"
-					+ "  \"id\": 0,\r\n"
+					+ "  \"id\": 1,\r\n"
 					+ "  \"idBook\": 7,\r\n"
-					+ "  \"firstName\": \"Happy\",\r\n"
-					+ "  \"lastName\": \"singh\"\r\n"
+					+ "  \"firstName\": \"Joe\",\r\n"
+					+ "  \"lastName\": \"Doe\"\r\n"
 					+ "}").log().all()
 			.when().post("/api/v1/Authors").then()
 
