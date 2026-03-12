@@ -37,6 +37,8 @@ public class oAuthTest {
 	
 	System.out.println(gc.getLinkedIn());
 	System.out.println(gc.getInstructor());
+	System.out.println(gc.getCourses().getApi().get(0).getCourseTitle());
+	
 	System.out.println(gc.getCourses().getApi().get(1).getCourseTitle());
 	
 	
@@ -55,9 +57,9 @@ public class oAuthTest {
 			
 			List<pojo.WebAutomation> w=gc.getCourses().getWebAutomation();
 			
-			for(int j=0;j<w.size();j++)
+			for(int m=0;m<w.size();m++)
 			{
-				a.add(w.get(j).getCourseTitle());
+				a.add(w.get(m).getCourseTitle());
 			}
 			
 			List<String> expectedList=	Arrays.asList(courseTitles);
